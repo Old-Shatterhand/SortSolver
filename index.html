@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SortSolver</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<h1>SortSolver for Mobile Sorting Games</h1>
+<h2>Setup</h2>
+<div>
+    <canvas id="tubes" width="1000" height="400"></canvas>
+</div>
+<div>
+    <button id="b_blank" onclick="addSpot(colors.BLANK)">Add Blank</button>
+    <button id="b_brown" onclick="addSpot(colors.BROWN)">Add Brown</button>
+    <button id="b_dblue" onclick="addSpot(colors.D_BLUE)">Add d. Blue</button>
+    <button id="b_dgreen" onclick="addSpot(colors.D_GREEN)">Add d. Green</button>
+    <button id="b_gray" onclick="addSpot(colors.GRAY)">Add Gray</button>
+    <button id="b_lblue" onclick="addSpot(colors.L_BLUE)">Add l. Blue</button>
+    <button id="b_lgreen" onclick="addSpot(colors.L_GREEN)">Add l. Green</button>
+    <button id="b_lila" onclick="addSpot(colors.LILA)">Add Lila</button>
+    <button id="b_orange" onclick="addSpot(colors.ORANGE)">Add Orange</button>
+    <button id="b_pink" onclick="addSpot(colors.PINK)">Add Pink</button>
+    <button id="b_red" onclick="addSpot(colors.RED)">Add Red</button>
+    <button id="b_yellow" onclick="addSpot(colors.YELLOW)">Add Yellow</button>
+    <br><br>
+    <button onclick="clearAll()">Clear</button>
+    <button onclick="removeSpot()">Remove Spot</button>
+    <button onclick="addTube()">Add tube</button>
+    <button onclick="removeTube()">Remove tube</button>
+    <button onclick="solve()">Solve</button>
+</div>
+<div>
+    <h2>Solution action sequence</h2>
+    <div id="solution"><p>Solution</p></div>
+    <button onclick="solForward()">Solution Forward</button>
+    <button onclick="solBackward()">Solution Backward</button>
+</div>
+</body>
+<script src="solver.js"></script>
+<script src="setting.js"></script>
+</html>
